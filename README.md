@@ -8,7 +8,7 @@ Process definition includes a reference to a document and to a list of documents
 All files will be stored by Bonita BPM Engine in database.
 Engine also saved the association between the process instance and documents content and version.
 
-## Compatibility
+## Compatibility
 This example has been created and built with Bonita BPM 7.1.5 Community edition.
 
 It should be compatible with any newer version as well as Subscription edition.
@@ -18,5 +18,5 @@ In order to implement optional upload of new document version a workaround is us
 
 File type validation is performed server side meaning that file need first to be upload to the server before being able to display warning message to the user.
 
-## Issues
+## Issues
 Reports issues and improvement request on GitHub tracker.
