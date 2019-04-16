@@ -1,0 +1,877 @@
+{
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.2.9",
+  "id" : "d5066ce3-f5da-4754-9749-6f909ba2bf85",
+  "name" : "demoFileUploadStepUpload",
+  "lastUpdate" : 1555420839566,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "This form can be used to upload a new version of documents."
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      }
+    },
+    "reference" : "3d3004aa-2307-4037-8483-dbf416eafd9f",
+    "hasValidationError" : false,
+    "id" : "pbText"
+  } ], [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "table-bordered"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "url" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "method" : {
+        "type" : "constant",
+        "value" : ""
+      }
+    },
+    "reference" : "7016fcd8-87e5-431e-991d-8051e421c5d7",
+    "hasValidationError" : false,
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        }
+      },
+      "reference" : "9d5f18fb-d68a-4484-b47e-d8d2957be780",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Single file to update"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "ec7dd48e-bca6-4db0-bc2a-d8b4ec848a68",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 2
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<b>Current file</b>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "2ef7e5a8-83f5-4a94-be3c-4f6e779354b1",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 10
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{context.myDocument_ref.fileName}}"
+          },
+          "targetUrl" : {
+            "type" : "expression",
+            "value" : "\"/bonita/portal/\" + context.myDocument_ref.url"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "link"
+          }
+        },
+        "reference" : "e1f5a01e-05e5-4ba0-b53d-2c75e3cbdd05",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "4b7af411-2f74-4327-9d5c-a4fcc8ecf661",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 8
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Updated file"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 3
+            },
+            "placeholder" : {
+              "type" : "interpolation",
+              "value" : "Please provide a PDF file"
+            },
+            "url" : {
+              "type" : "constant",
+              "value" : "../API/formFileUpload"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formOutput.myDocumentContract"
+            },
+            "errorContent" : {
+              "type" : "variable"
+            }
+          },
+          "reference" : "11642f0c-8c81-43be-89c1-c28768f29c37",
+          "hasValidationError" : false,
+          "id" : "pbUpload"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 4
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : "text-danger"
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "isValidFileWidgetValue"
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "<b>Only PDF files are accepted for this field</b>"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "allowHTML" : {
+              "type" : "constant",
+              "value" : true
+            }
+          },
+          "reference" : "710a14e7-82e1-46f3-92fb-bd9ef17ba4d1",
+          "hasValidationError" : false,
+          "id" : "pbText"
+        } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Multiple files to remove/add"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "097b4512-cbeb-46ea-90a8-5203137843c6",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Select files to remove"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "7e8d2c8b-3684-4aaa-b4e9-d30a8407d9e6",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : "context.myMultipleDocuments_ref"
+          }
+        },
+        "reference" : "9a9f9fa8-3344-498b-8904-cc4816b3c282",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 1
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "disabled" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : ""
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formOutput.myMultipleDocumentsDeleteContract[$index].selected"
+            }
+          },
+          "reference" : "10b76168-839d-4fbe-9eb1-ccd94e711e6d",
+          "hasValidationError" : false,
+          "id" : "pbCheckbox"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 11
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "{{$item.fileName}}"
+            },
+            "targetUrl" : {
+              "type" : "expression",
+              "value" : "\"/bonita/portal/\"+ $item.url"
+            },
+            "target" : {
+              "type" : "constant",
+              "value" : "_self"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "buttonStyle" : {
+              "type" : "constant",
+              "value" : "link"
+            }
+          },
+          "reference" : "cd1ece5a-a606-4186-a14d-eeec7d515c29",
+          "hasValidationError" : false,
+          "id" : "pbLink"
+        } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Select files to add"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "83579cfa-8038-47a8-911f-edbad19cdd17",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "panel panel-primary"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : "formOutput.myMultipleDocumentsContract"
+          }
+        },
+        "reference" : "d24c8ccd-4f9d-4bb0-ba31-a74cda50d564",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 10
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "New file"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 2
+            },
+            "placeholder" : {
+              "type" : "interpolation",
+              "value" : "Please provide a file"
+            },
+            "url" : {
+              "type" : "constant",
+              "value" : "../API/formFileUpload"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formOutput.myMultipleDocumentsContract[$index]"
+            },
+            "errorContent" : {
+              "type" : "variable"
+            }
+          },
+          "reference" : "9cb99504-5fc7-4f88-883f-3f9d7682cf7c",
+          "hasValidationError" : false,
+          "id" : "pbUpload"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 2
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "disabled" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Remove"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "buttonStyle" : {
+              "type" : "constant",
+              "value" : "warning"
+            },
+            "action" : {
+              "type" : "constant",
+              "value" : "Remove from collection"
+            },
+            "url" : {
+              "type" : "interpolation"
+            },
+            "dataToSend" : {
+              "type" : "constant"
+            },
+            "dataFromSuccess" : {
+              "type" : "variable"
+            },
+            "dataFromError" : {
+              "type" : "variable"
+            },
+            "targetUrlOnSuccess" : {
+              "type" : "interpolation"
+            },
+            "collectionToModify" : {
+              "type" : "variable",
+              "value" : "$collection"
+            },
+            "collectionPosition" : {
+              "type" : "constant",
+              "value" : "Item"
+            },
+            "valueToAdd" : {
+              "type" : "constant"
+            },
+            "removeItem" : {
+              "type" : "variable",
+              "value" : "$item"
+            }
+          },
+          "reference" : "34d7f83a-a51d-44f9-ac82-9a4db4ca81d5",
+          "hasValidationError" : false,
+          "id" : "pbButton"
+        } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Add a file"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "success"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Add to collection"
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataToSend" : {
+            "type" : "constant"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable"
+          },
+          "dataFromError" : {
+            "type" : "variable"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation"
+          },
+          "collectionToModify" : {
+            "type" : "variable",
+            "value" : "formOutput.myMultipleDocumentsContract"
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "expression",
+            "value" : "null"
+          },
+          "removeItem" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "0f1f81a6-6129-4246-b0f4-994e2d865b61",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Submit"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid || !isValidFileWidgetValue"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable"
+          },
+          "dataFromError" : {
+            "type" : "variable"
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "removeItem" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "3ddb1c1b-ca3c-404b-9ee2-a484e857f281",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Debug"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "27c35770-b0ce-4011-bbff-3790e9e41354",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "formOutput: {{ formOutput | json }}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      }
+    },
+    "reference" : "508b5b5c-da86-4cbe-a042-9102a17a3ed0",
+    "hasValidationError" : false,
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "8b525561-3658-4487-a4db-91cc6285e370",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "fbfa3316-4fe9-4aec-ac1d-ef1f1818da50",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 1,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "if(angular.isUndefined($data.formOutput) && angular.isDefined($data.context)) {\n    return {\n        \"myMultipleDocumentsDeleteContract\": $data.context.myMultipleDocuments_ref,\n        \"myMultipleDocumentsContract\": [],\n        \"myDocumentContract\": null\n    };\n} else {\n    return $data.formOutput;\n}",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "/bonita/API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "isValidFileWidgetValue" : {
+      "type" : "expression",
+      "value" : "// This expression return true if either one of the following conditions are met:\n// - If no file widget has been set (empty JSON object: {}).\n// We do that because we don't want to display warning message if user didn't select any file.\n// - If selected and uploaded file (upload is triggered immediately after file selection) is a PDF file\n\nreturn angular.isDefined($data.formOutput) && (angular.equals(null, $data.formOutput.myDocumentContract)\n    || $data.formOutput.myDocumentContract.contentType == \"application/pdf\");",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "d5066ce3-f5da-4754-9749-6f909ba2bf85",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer",
+  "displayName" : "demoFileUploadStepUpload"
+}
