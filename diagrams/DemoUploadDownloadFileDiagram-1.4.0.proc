@@ -95,8 +95,8 @@
       <formMapping xmi:type="process:FormMapping" xmi:id="_bO1U9KhNEeajju4PkuORrQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_bO1U9ahNEeajju4PkuORrQ" name="demoFileUploadInstantiation" content="44123462-f34d-455b-bd65-7c4e498af08b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_bO1U96hNEeajju4PkuORrQ" type="NONE">
-        <targetForm xmi:type="expression:Expression" xmi:id="_bO1U-KhNEeajju4PkuORrQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_bO1U96hNEeajju4PkuORrQ">
+        <targetForm xmi:type="expression:Expression" xmi:id="_bO1U-KhNEeajju4PkuORrQ" name="demoFileUploadCaseOverview" content="981aadcf-631a-4742-9507-59e85e93c39e" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_bO1U-qhNEeajju4PkuORrQ" target="_bO1UqKhNEeajju4PkuORrQ" source="_bO1Uo6hNEeajju4PkuORrQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_bO1U-6hNEeajju4PkuORrQ"/>
