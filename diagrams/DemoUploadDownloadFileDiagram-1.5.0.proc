@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_bO1UoKhNEeajju4PkuORrQ" name="DemoUploadDownloadFileDiagram" version="1.4.0" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E30">
-    <elements xmi:type="process:Pool" xmi:id="_bO1UoahNEeajju4PkuORrQ" name="DemoUploadDownloadFile" version="1.4.0">
+  <process:MainProcess xmi:id="_bO1UoKhNEeajju4PkuORrQ" name="DemoUploadDownloadFileDiagram" version="1.5.0" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED0005740010372E31302E302D303031372E31302E30">
+    <elements xmi:type="process:Pool" xmi:id="_bO1UoahNEeajju4PkuORrQ" name="DemoUploadDownloadFile" version="1.5.0">
       <elements xmi:type="process:Lane" xmi:id="_bO1UoqhNEeajju4PkuORrQ" name="Employee lane" actor="_bO1VA6hNEeajju4PkuORrQ">
         <elements xmi:type="process:StartEvent" xmi:id="_bO1Uo6hNEeajju4PkuORrQ" name="Start" outgoing="_bO1U-qhNEeajju4PkuORrQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_bO1UpahNEeajju4PkuORrQ" name="" content="" returnTypeFixed="true"/>
