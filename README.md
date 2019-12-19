@@ -11,7 +11,7 @@ All files will be stored by Bonita Engine in database.
 Engine also saved the association between the process instance and documents content and version.
 
 ## Compatibility
-This example has been created and built with Bonita BPM 7.8.3 Community Edition.
+This example has been created and built with Bonita 7.10.0 Community Edition.
 
 It should be compatible with any newer version as well as Entreprise Edition.
 
